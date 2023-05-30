@@ -3,16 +3,23 @@
   <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Writing to the page</title>
+ <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
   <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <title>Writing to the page</title>
   </head>
 
   <body>
-    <div id="manual-write"></div>
-    <p id="data"></p>
-    <button py-click="write_to_page()" id="manual">Say Hello</button>
-    <py-config src="./pyscript.toml"></py-config>
     <py-script src="./main.py"></py-script>
+    <py-config src="./pyscript.toml"></py-config>
+
+
+
+    <p id="data"></p>
+    <div id="manual-write"></div>
+    <button py-click="write_to_page()" id="manual">Say Hello</button>
+    
+   
+
   </body>
 </html>
