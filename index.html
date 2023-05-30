@@ -11,6 +11,11 @@
     <h1>Testando pyscript com html</h1>
     <py-config src="./pyscript.toml"></py-config>
     <py-script src="./main.py"></py-script>
-    <py-repl></py-repl>
+
+
+    <p id="data"></p>
+    <py-script>
+        Element('data').write(str(dt.date.today()))
+    </py-script>
 </body>
 </html>
